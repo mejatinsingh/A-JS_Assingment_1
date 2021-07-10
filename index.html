@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='MsgApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <script src="app.js"></script>
+    <style> body { font-size: 1.2em; }</style>
+    <title>Assingment-1</title>
+  </head>
+  <body>
+    <h1>Please Enter Food item you had today</h1>
+    <div ng-controller='MsgController'>
+     
+      <br>
+      {{sayMessage()}}
+      <br>
+      <input type="text" ng-model="Dishes">
+    
+      <div>
+        <button ng-click="seeFood()">Check If Too Much</button>
+        <br>
+
+        <h3>{{stateOfBeing}}</h3>
+      </div>
+    </div>
+  </body>
+</html>
